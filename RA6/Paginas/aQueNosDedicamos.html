@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¿A qué nos dedicamos? - ZEAT</title>
+  <style>
+    :root {
+      --azul-zeat: #003366;
+      --celeste-zeat: #a8d0ff;
+      --gris-claro: #f4f4f4;
+      --blanco: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--gris-claro);
+      color: #333;
+    }
+
+    /* CABECERA */
+    header {
+      text-align: center;
+      background-color: var(--azul-zeat);
+      color: white;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    /* SECCIÓN PRINCIPAL */
+    section {
+      max-width: 1000px;
+      margin: 50px auto;
+      background-color: var(--blanco);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    section h2 {
+      color: var(--azul-zeat);
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .content-wrapper img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .content-text {
+      font-size: 18px;
+      line-height: 1.7;
+      text-align: justify;
+      max-width: 800px;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: var(--azul-zeat);
+    }
+
+    @media (min-width: 768px) {
+      .content-wrapper {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .content-wrapper img {
+        width: 45%;
+      }
+
+      .content-text {
+        width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ZEAT, S.A.</h1>
+    <div class="slogan">Movilidad inteligente, sostenible y cercana</div>
+  </header>
+
+  <section>
+    <h2>¿A qué nos dedicamos?</h2>
+    <div class="content-wrapper">
+      <img src="https://images.unsplash.com/photo-1615915468030-c7b34a2d7456?auto=format&fit=crop&w=800&q=80" alt="Vehículo ZEAT" />
+      <div class="content-text">
+        <p>
+          En <span class="highlight">ZEAT, S.A.</span> nos dedicamos al diseño, fabricación y comercialización de vehículos innovadores y de alta calidad. ZEAT forma parte del reconocido <span class="highlight">grupo Volkswagen</span>, lo que nos permite unir experiencia, tecnología y visión de futuro.
+        </p>
+        <p>
+          Nos especializamos en la producción de vehículos <span class="highlight">urbanos y familiares</span>, pensados para ofrecer confort, seguridad y eficiencia. Además, apostamos decididamente por la <span class="highlight">movilidad sostenible</span> a través del desarrollo de <span class="highlight">vehículos eléctricos e híbridos</span> que reducen el impacto ambiental y mejoran la calidad de vida en nuestras ciudades.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
