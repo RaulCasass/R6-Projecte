@@ -91,3 +91,41 @@ body {
 .footer a:hover {
     text-decoration: underline;
 }
+.highlight-bg-section {
+    min-height: 480px;
+    width: 100vw;
+    background: 
+        linear-gradient(to right, rgba(20,20,20,0.85) 0%, rgba(20,20,20,0.20) 60%, rgba(20,20,20,0.0) 90%),
+        url('recursos/zeat-tavascan.avif') right center/cover no-repeat;
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.highlight-content-custom {
+    max-width: 380px;
+    padding: 3rem 1.2rem 3rem 1.2rem;
+    margin-left: 1.5rem;
+    background: rgba(0,0,0,0.20);
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 991.98px) {
+    .highlight-bg-section {
+        background-position: center;
+        min-height: 350px;
+    }
+    .highlight-content-custom {
+        max-width: 100%;
+        margin-left: 0.5rem;
+        padding: 2rem 0.7rem;
+    }
+}
+@media (max-width: 575.98px) {
+    .highlight-content-custom {
+        padding: 1rem 0.3rem;
+        margin-left: 0;
+    }
+}
