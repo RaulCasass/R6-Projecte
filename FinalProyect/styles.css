@@ -1,0 +1,93 @@
+/* Custom styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 56px; /* Ajuste para el menú fijo */
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.hero-overlay {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero-gradient {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    z-index: -1;
+}
+
+.hero-text-container {
+    position: relative;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.hero-financing {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+.highlight-section {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 3rem 0;
+}
+
+.highlight-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.highlight-description {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
