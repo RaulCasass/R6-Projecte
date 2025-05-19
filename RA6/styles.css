@@ -1,0 +1,154 @@
+/* Custom styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 56px; /* Ajuste para el menú fijo */
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.hero-overlay {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero-gradient {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    z-index: -1;
+}
+
+.hero-text-container {
+    position: relative;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.hero-financing {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+.highlight-section {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 3rem 0;
+}
+
+.highlight-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.highlight-description {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+.highlight-bg-section {
+    min-height: 480px;
+    width: 100vw;
+    background: 
+        linear-gradient(to right, rgba(20,20,20,0.85) 0%, rgba(20,20,20,0.20) 60%, rgba(20,20,20,0.0) 90%),
+        url('recursos/zeat-tavascan.avif') right center/cover no-repeat;
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.highlight-content-custom {
+    max-width: 380px;
+    padding: 3rem 1.2rem 3rem 1.2rem;
+    margin-left: 1.5rem;
+    background: rgba(0,0,0,0.20);
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 991.98px) {
+    .highlight-bg-section {
+        background-position: center;
+        min-height: 350px;
+    }
+    .highlight-content-custom {
+        max-width: 100%;
+        margin-left: 0.5rem;
+        padding: 2rem 0.7rem;
+    }
+}
+@media (max-width: 575.98px) {
+    .highlight-content-custom {
+        padding: 1rem 0.3rem;
+        margin-left: 0;
+    }
+}
+
+/*Agregado por Jeremy para el form*/
+form .form-control {
+    border-radius: 0.4rem;
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+}
+
+form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+form button {
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #eaeaea;
+}
